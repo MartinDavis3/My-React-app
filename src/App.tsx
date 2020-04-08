@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import {Button, Icon, Card, Image} from 'semantic-ui-react';  //NB you can put multiple objects for import!
+import {Button, Icon, Card, Image, Input} from 'semantic-ui-react';  //NB you can put multiple objects for import!
 // import {Icon} from 'semantic-ui-react';
 function App() {
 
@@ -19,14 +19,14 @@ function App() {
         <Card>
           <Card.Content>
             <Image
-              floated='right'
+              floated='left'
               size='mini'
-              src='../public/img/favicon.png'
+              src='img/Me.jpg'
             />
-            <Card.Header>Steve Sanders</Card.Header>
-            <Card.Meta>Friends of Elliot</Card.Meta>
+            <Card.Header>Martin Davis</Card.Header>
+            <Card.Meta>Friends of Andrew</Card.Meta>
             <Card.Description>
-              Steve wants to add you to the group <strong>best friends</strong>
+              Martin wants to add you to the group <strong>best friends</strong>
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
@@ -40,6 +40,13 @@ function App() {
             </div>
           </Card.Content>
         </Card>
+
+        {/* const InputExampleRightLabeledBasic = () => ( */}
+        <Input
+          label={{ basic: true, content: 'kg' }}
+          labelPosition='right'
+          placeholder='Enter weight...'
+        />
       </Fragment>
     </React.Fragment>
   );
