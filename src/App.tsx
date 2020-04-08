@@ -1,7 +1,15 @@
 import React, { Fragment } from 'react';
 import './App.css';
+import Person from'./Person';
 import {Button, Icon, Card, Image, Input} from 'semantic-ui-react';  //NB you can put multiple objects for import!
 // import {Icon} from 'semantic-ui-react';
+import PersonProfile from './PersonProfile';
+// If there is a single export with default in the file, don't need braces. Braces when you are specifying a particular component where there are multiple ones in th3e file.
+
+let propsExampleFunction = (input: string): string => {
+  return `The answer is 42 ${input}`;
+}
+
 function App() {
 
   return (
@@ -47,6 +55,18 @@ function App() {
           labelPosition='right'
           placeholder='Enter weight...'
         />
+        <div>
+          return(
+            <PersonProfile />
+          )
+        </div>
+        <div>
+          return (
+            <Fragment>
+              <Person name="John Doe" callbackMethod={propsExampleFunction}/>
+            </Fragment>
+          )
+        </div>
       </Fragment>
     </React.Fragment>
   );
