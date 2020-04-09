@@ -1,3 +1,7 @@
+App created by Cole as class demontration.
+
+Modified by me to try out React.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

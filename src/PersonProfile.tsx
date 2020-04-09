@@ -18,7 +18,7 @@ export default class PersonProfile extends React.Component<IPersonProfileProps> 
   public render() {
     return (
       <React.Fragment>
-          <h1>Person Name</h1>
+          <h2>Person Name</h2>
           <p>Person Birthday</p>
           <p>Person Pet Name</p>
       </React.Fragment>

@@ -48,32 +48,19 @@ function App() {
             </div>
           </Card.Content>
         </Card>
-
         {/* const InputExampleRightLabeledBasic = () => ( */}
         <Input
           label={{ basic: true, content: 'kg' }}
           labelPosition='right'
           placeholder='Enter weight...'
         />
-        <div>
-          return(
-            <PersonProfile />
-          )
-        </div>
-        <div>
-          return (
-            <Fragment>
-              <Person name="John Doe" callbackMethod={propsExampleFunction}/>
-            </Fragment>
-          )
-        </div>
+        <PersonProfile />
+        <Fragment>
+          <Person name="John Doe" callbackMethod={propsExampleFunction}/>
+        </Fragment>
       </Fragment>
     </React.Fragment>
   );
-
-
-
-
 }
 
 export default App;
